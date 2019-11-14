@@ -2,9 +2,16 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+<ul>
+<li><a href="{{ url_for('home') }}">Home</a></li>
+<li><a href="{{ url_for('store') }}">Store(Hamdan and his Sons for Slippers</a></li>
+<li><a href="{{ url_for('about') }}">About</a></li>
+<li><a href="{{ url_for('admin') }}">Admins(AKA HAMDAN ONLY)</a></li>
 
-
+</ul>
+<h1>These are some Beautiful hand made slippers, made out of the best materials and the highest qualities.</h1>
 </body>
 </html>

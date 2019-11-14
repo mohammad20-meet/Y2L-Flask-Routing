@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<title>Hamdan and his sons</title>
+	 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+<ul>
+<li><a href="{{ url_for('home') }}">Home</a></li>
+<li><a href="{{ url_for('store') }}">Store(Hamdan and his Sons for Slippers</a></li>
+<li><a href="{{ url_for('about') }}">About</a></li>
+<li><a href="{{ url_for('admin') }}">Admins(AKA HAMDAN ONLY)</a></li>
 
+</ul>
+
+
+<div class="container" >
+	<div class="row" style ="margin-top: 25px;">
+		<div class="col-2">
+			<p><h1>Arabian Daddy Slippers</h1>
+		</div>
+			<div class="col-4">
+				<p><img src="{{url_for('static', filename='Slip.jpeg', width=100)}}"/></p>
+				<button style="background-color:yellow"><a href="{{ url_for('cart') }}">Buy</a></button> </p>
+		</div>
+
+
+		<div class="col-2">
+			<h1>Sexy Flip-Flops</h1>
+		</div>
+			<div class="col-4">
+				<p><img src="{{url_for('static', filename='Flip.jpeg', width=100)}}"/></p>
+				<button style="background-color:yellow"><a href="{{ url_for('cart') }}">Buy Now or die</a></button></p>
+			</div>
+		</div>
 
 </body>
 </html>
