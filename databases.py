@@ -57,9 +57,10 @@ def query_by_name(Product_id, name):
    in the database, by their name
    """
    product = session.query(
-       Student).filter_by(
+       name).filter_by(
        Product_id=Product_id).first()
    return product
+   
 def Add_to_Cart(ProductID):
 	Cart_object = Product(ProductID = ProductID)
 	session.add(Cart_object)

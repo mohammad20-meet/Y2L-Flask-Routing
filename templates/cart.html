@@ -1,12 +1,18 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title></title>
 </head>
 <body>
+{%for i in products%}
+<H1> {{i}} </H1>
+{%endfor%}	
 
 <!-- Delete this section when you reach this file -->
-<h1 style="font-size: 70px;position: absolute;left: 10%;bottom:50%">I Ain't selling my father's slippers sorry.</h1>
+ <h1 style="font-size: 70px;position: absolute;left: 10%;bottom:50%">I Ain't selling my father's slippers sorry.</h1>
+ 
+ </p><button style="background-color:yellow" style="font-size: 70px;position: absolute;left: 10%;bottom:50%"><a href="{{ url_for('cart') }}" >Pay Now</a></button> </p>
 <!-- ------------------ -->
 
 </body>
